@@ -3,13 +3,16 @@
   --btn-color: #2bae66;
   --text-color: #020887;
   --achei: tomato;
+  --text-bright: #e1f9f5;
+  --text-black: #08090a;
+  --recommended: #ffa07a;
 }
 
 body,
 textarea {
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1,
 h2,
@@ -102,4 +105,158 @@ nav {
 
 .main-banner p {
   font-size: 54px;
+}
+
+/* Especialidades */
+
+.specialities-container {
+  padding: 5em 0;
+  background-color: var(--navbar-color);
+}
+
+.specialities-container ul {
+  display: flex;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.specialities-container ul {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+}
+
+.specialities-container ul li h3 {
+  margin-bottom: 25px;
+  color: var(--text-black);
+}
+
+.specialities-container ul li p {
+  line-height: 24px;
+  color: var(--text-color);
+  margin: 20px;
+}
+
+/* Prices */
+
+.pricing-container {
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+.pricing-container h1 {
+  font-size: 36px;
+  margin-top: 28px;
+}
+
+.pricing-container p {
+  font-size: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plan {
+  flex: 1 1 200px;
+  max-width: 275px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.plan ul {
+  padding: 0;
+}
+
+.plan li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--text-bright);
+  color: #111;
+}
+
+.plan .price {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #2cc762;
+  color: var(--text-bright);
+  text-align: center;
+  line-height: 120px;
+  font-size: 18px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px; /* a ideia é fazer com que a bola entre nos valores abaixo */
+}
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--text-black);
+  padding-top: 50px;
+  padding-bottom: 20px; /*usar o padding pois desta maneira um não "empurra" o outro */
+}
+
+.plan .plan-btn {
+  background-color: var(--btn-color);
+  color: var(--text-bright);
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plan .plan-btn-recommended {
+  background-color: var(--recommended);
+  color: var(--text-bright);
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plan .plan-name-recommended {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-bright);
+  background-color: #111;
+  padding-top: 50px;
+  padding-bottom: 20px; /*usar o padding pois desta maneira um não "empurra" o outro */
+}
+
+.plan .price-recommended {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--recommended);
+  color: var(--text-bright);
+  text-align: center;
+  line-height: 120px;
+  font-size: 18px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px; /* a ideia é fazer com que a bola entre nos valores abaixo */
 }
